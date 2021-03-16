@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebAppDay39Exercise1.Models;
 
 namespace WebAppDay39Exercise1.Controllers
 {
@@ -26,5 +27,20 @@ namespace WebAppDay39Exercise1.Controllers
 
             return View();
         }
+
+        public ActionResult Display()
+        {
+            List<Emps> emp = new List<Emps>
+            {
+        new Emps{EId=1,EName="Mohan",EDesign="HR",EDOJ=DateTime.Now},
+        new Emps{EId=2,EName="Mohani",EDesign="HR",EDOJ=DateTime.Now},
+          new Emps{EId=3,EName="Mohanram",EDesign="HR",EDOJ=DateTime.Now}
+
+};
+
+            return View();
+        }
+           
+        }
     }
-}
+
